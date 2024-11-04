@@ -1,0 +1,13 @@
+---
+ref: jira
+name: jira
+description: Jira integrations
+keywords:
+  - issues
+  - ticket management
+  - project management
+version: 3.1.0
+python_versions:
+  - "3"
+author: StackStorm, Inc.
+email: info@stackstorm.com
