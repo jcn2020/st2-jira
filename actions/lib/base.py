@@ -54,7 +54,7 @@ class BaseJiraAction(Action):
         elif auth_method == 'api_token':
             headers = JIRA.DEFAULT_OPTIONS["headers"].copy()
             b64_header = base64.b64encode(f"{config['username']}:{config['token']}".encode())
-            headers["Authorization"] = f"Basic {b64_header.decode()}"
+            headers["Authorization"] = f"Bearer {b64_header.decode()}"
             client = JIRA(server=config['url'], options={"headers": headers})
 
         else:
